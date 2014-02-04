@@ -24,6 +24,7 @@ $(document).ready(function(){
 					$(real).show();
 					$(duplicate).hide();
 				}
+				
 			    $(real).before(duplicate);
 
 				$(duplicate).focus(function(){
@@ -31,6 +32,7 @@ $(document).ready(function(){
 				   $(real).focus();
 				   $(duplicate).hide();
 				});
+				
 			    $(real).blur(function(){
 			        if($(real).val()==""){
 						$(real).hide();
@@ -41,6 +43,7 @@ $(document).ready(function(){
 						$(duplicate).hide();
 					}
 			    });
+			    
 			    $(real).change(function(){
 			        if($(real).val()==""){
 						$(real).hide();
